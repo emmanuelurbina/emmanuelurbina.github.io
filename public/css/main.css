@@ -98,6 +98,28 @@ i {
     width: 100%;
 }
 
+
+/*hobbies*/
+
+.hobbies {
+    margin: 3em;
+}
+
+.container-hb {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    justify-content: center;
+    gap: 1em;
+}
+
+.hobbie {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1300px) {
     .personal-name div h1 {
         font-size: 26px;
@@ -139,6 +161,13 @@ i {
         justify-content: unset;
         grid-template-columns: auto;
         gap: 0;
+    }
+    .hobbies {
+        margin: 0;
+    }
+    .container-hb {
+        grid-template-columns: auto;
+        gap: 2em;
     }
 }
 
