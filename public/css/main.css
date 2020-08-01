@@ -39,6 +39,7 @@ img {
 }
 
 .personal-name div h1 {
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -64,12 +65,38 @@ i {
     padding: 0 3em;
 }
 
-.profile-img {
+.shadow {
     box-shadow: 8px 8px 19px -1px rgba(0, 0, 0, 0.66);
 }
 
 
 /*End Personal Info*/
+
+
+/*skills*/
+
+.skills {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: unset;
+    gap: .5em;
+}
+
+.detail-md {
+    width: 100%;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.barra,
+.text-skill {
+    padding: 5px 0;
+    width: 100%;
+}
 
 @media screen and (max-width: 1300px) {
     .personal-name div h1 {
@@ -88,6 +115,9 @@ i {
     .personal-info {
         grid-template-columns: auto 60%;
     }
+    .barra {
+        padding-left: 30px;
+    }
 }
 
 @media screen and (max-width: 905px) {
@@ -104,4 +134,69 @@ i {
     .info {
         font-size: 18px;
     }
+    .skills {
+        margin: 3em 0;
+        justify-content: unset;
+        grid-template-columns: auto;
+        gap: 0;
+    }
+}
+
+
+/*progress bar*/
+
+.bar {
+    width: 100%;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 15px;
+}
+
+.load {
+    background-color: purple;
+    width: 100%;
+    padding: 1px;
+    border: none;
+    border-radius: 15px;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-100,
+.auto {
+    width: 100%;
 }
