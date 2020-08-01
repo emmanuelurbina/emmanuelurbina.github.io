@@ -120,6 +120,25 @@ i {
     border-radius: 15px;
 }
 
+
+/*projects*/
+
+.projects {
+    margin: 3em;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+}
+
+.project {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 1300px) {
     .personal-name div h1 {
         font-size: 26px;
@@ -168,6 +187,15 @@ i {
     .container-hb {
         grid-template-columns: auto;
         gap: 2em;
+    }
+    .projects {
+        margin: 3em 0;
+    }
+    .projects-list {
+        grid-template-columns: auto;
+    }
+    .project {
+        margin: 0;
     }
 }
 
