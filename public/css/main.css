@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    /*font wieght 400 & 700*/
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.container {
+    margin: 2em 8em;
+}
+
+
+/* personal info */
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: center;
+    gap: 1em;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.personal-name {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    margin-bottom: 2em;
+    gap: 1em;
+}
+
+.personal-name div h1 {
+    font-weight: 700;
+}
+
+.contact-info {
+    list-style: none;
+}
+
+.muted,
+i {
+    color: gray;
+}
+
+.heart {
+    color: red;
+}
+
+.personal-goal {
+    text-align: justify;
+}
+
+.image-container {
+    width: 100%;
+    padding: 0 3em;
+}
+
+.profile-img {
+    box-shadow: 8px 8px 19px -1px rgba(0, 0, 0, 0.66);
+}
+
+
+/*End Personal Info*/
+
+@media screen and (max-width: 1300px) {
+    .personal-name div h1 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .info {
+        font-size: 18px;
+    }
+    .image-container {
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .personal-info {
+        grid-template-columns: auto 60%;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .container {
+        margin: 2em;
+    }
+    .personal-info {
+        grid-template-columns: auto;
+    }
+    .personal-name {
+        text-align: center;
+        grid-template-columns: auto;
+    }
+    .info {
+        font-size: 18px;
+    }
+}
