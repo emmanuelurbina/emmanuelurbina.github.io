@@ -139,6 +139,14 @@ i {
     border-radius: 15px;
 }
 
+.description-project h3 {
+    margin-top: 1em;
+}
+
+.description-project .desc {
+    margin: 2em 0;
+}
+
 @media screen and (max-width: 1300px) {
     .personal-name div h1 {
         font-size: 26px;
