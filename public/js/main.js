@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
     counter_p.innerHTML = data.length;
     data.forEach(ele => {
         console.log(ele);
-        projects += set_template(ele.image, ele.title, ele.description, ele.tags)
+        projects += set_template(ele.image, ele.title, ele.description, ele.tags, ele.live, ele.code)
     })
     app.innerHTML = projects
 })
 
-function set_template(image, title, description, tag) {
+function set_template(image, title, description, tag, live, code) {
 
     let template = `<article class="project shadow">
                     <div class="image-project">
@@ -22,6 +22,17 @@ function set_template(image, title, description, tag) {
                         <h3>${title}</h3>
                         <p class="desc">${description}</p>
 
+                    </div>
+                    <div class="buttons">
+                        <ul class="list-buttons">
+                            <li class="button-item">
+                                <a href="${live}" target="_blank" class='btn primary'> Live </a>
+                            </li>
+                            <li class="button-item">
+                                <a href="${code}" target="_blank" class='btn secondary'> Code </a>
+                            </li>
+                        </ul>
+                    <ul>
                     </div>
                     <div class='tags_project'><p>
                     ${template_tag(tag)}
