@@ -62,7 +62,7 @@ i {
 
 .image-container {
     width: 100%;
-    padding: 0 3em;
+    padding-right: 3em;
 }
 
 .shadow {
@@ -72,13 +72,25 @@ i {
 
 /*End Personal Info*/
 
+.socaial_media {
+    margin: 3em;
+}
+
+.socaial_media i {
+    font-size: 28px;
+}
+
+.socaial_media div {
+    display: inline;
+}
+
 
 /*skills*/
 
 .skills {
     margin: 3em;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto;
     justify-content: unset;
     gap: .5em;
 }
@@ -89,7 +101,7 @@ i {
 
 .skill {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 30% 70%;
 }
 
 .barra,
@@ -107,7 +119,7 @@ i {
 
 .container-hb {
     display: grid;
-    grid-template-columns: repeat(2, 25%);
+    grid-template-columns: auto;
     justify-content: center;
     gap: 1em;
 }
@@ -124,17 +136,16 @@ i {
 /*projects*/
 
 .projects {
-    margin: 3em;
+    margin: 3em 0;
 }
 
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: .5em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 }
 
 .project {
-    margin: 1em;
     padding: 1em;
     border-radius: 15px;
 }
@@ -145,6 +156,28 @@ i {
 
 .description-project .desc {
     margin: 2em 0;
+}
+
+.tags_project {
+    color: gray;
+}
+
+.total-p {
+    padding: 5px 1em;
+    background-color: tomato;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    font-size: 22px;
+}
+
+.projects-filter {
+    margin-bottom: 1em;
+}
+
+.projects-filter h1 {
+    font-size: 32px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -158,6 +191,11 @@ i {
     .image-container {
         padding: 0
     }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 35% 65%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -186,14 +224,11 @@ i {
     .skills {
         margin: 3em 0;
         justify-content: unset;
-        grid-template-columns: auto;
-        gap: 0;
     }
     .hobbies {
         margin: 0;
     }
     .container-hb {
-        grid-template-columns: auto;
         gap: 2em;
     }
     .projects {
@@ -204,6 +239,13 @@ i {
     }
     .project {
         margin: 0;
+    }
+    .content {
+        grid-template-columns: auto;
+    }
+    .socaial_media {
+        margin: 1em 0;
+        text-align: center;
     }
 }
 
