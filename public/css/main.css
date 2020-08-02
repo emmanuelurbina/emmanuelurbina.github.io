@@ -205,6 +205,13 @@ i {
     .barra {
         padding-left: 30px;
     }
+    .projects-list {
+        grid-template-columns: auto;
+    }
+    .skills,
+    .hobbies {
+        margin: 1em;
+    }
 }
 
 @media screen and (max-width: 905px) {
