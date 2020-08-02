@@ -148,6 +148,8 @@ i {
 .project {
     padding: 1em;
     border-radius: 15px;
+    position: relative;
+    transform: rotate(-2deg)
 }
 
 .description-project h3 {
@@ -276,43 +278,53 @@ i {
 
 .w-10 {
     width: 10%;
+    animation: w-10-an 2s;
 }
 
 .w-20 {
     width: 20%;
+    animation: w-20-an 2s;
 }
 
 .w-30 {
     width: 30%;
+    animation: w-30-an 2s;
 }
 
 .w-40 {
     width: 40%;
+    animation: w-40-an 2s;
 }
 
 .w-50 {
     width: 50%;
+    animation: w-50-an 2s;
 }
 
 .w-60 {
     width: 60%;
+    animation: w-60-an 2s;
 }
 
 .w-70 {
     width: 70%;
+    animation: w-70-an 2s;
 }
 
 .w-80 {
     width: 80%;
+    animation: w-80-an 2s;
 }
 
 .w-90 {
     width: 90%;
+    animation: w-90-an 2s;
 }
 
 .w-100,
 .auto {
     width: 100%;
+    animation: w-100-an 2s;
 }
 
 .footer {
@@ -368,4 +380,115 @@ i {
 .secondary:active {
     background-color: #1e85fa;
     color: #fff;
+}
+
+.pin {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.project {
+    animation: mymove 1s;
+}
+
+@keyframes w-10-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 10%;
+    }
+}
+
+@keyframes w-20-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes w-30-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes w-40-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes w-50-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes w-60-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes w-70-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes w-80-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes w-90-an {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes w-100-an {
+    from {
+        width: 10%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(1deg)
+    }
+    to {
+        transform: rotate(-2deg)
+    }
 }

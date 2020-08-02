@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function set_template(image, title, description, tag, live, code) {
 
     let template = `<article class="project shadow">
+                    <img src="./public/images/pinned.png" class='pin'>
                     <div class="image-project">
                         <img src="${image}" alt="recipe">
                     </div>
