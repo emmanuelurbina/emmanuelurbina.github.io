@@ -200,7 +200,7 @@ i {
     grid-template-columns: 35% 65%;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1062px) {
     .personal-info {
         grid-template-columns: auto 60%;
     }
