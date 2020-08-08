@@ -20,6 +20,13 @@ const data = [{
     live: "https://emmanuelurbina.github.io/edie-homepage/",
     code: "https://github.com/emmanuelurbina/edie-homepage",
     tags: ['HTML', 'CSS', 'Responsive']
+}, {
+    title: "MRC Margarita",
+    image: path + "mrc-shop.png",
+    description: "Shopify store",
+    live: "https://mrcmargarita.com/",
+    code: "#",
+    tags: ['Shopify']
 }]
 
 export {
