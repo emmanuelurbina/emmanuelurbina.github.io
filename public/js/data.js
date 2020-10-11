@@ -2,7 +2,7 @@ const path = "./public/images/"
 const data = [{
     title: "Random Quote App",
     image: path + "random-quote-vue.png",
-    description: "In this project I work with HTML, CSS. Page Responsive",
+    description: "In this project I work with HTML, CSS and VUE, Web Page is Responsive",
     live: "https://random-quote-elu.netlify.app/",
     code: "https://github.com/emmanuelurbina/random-quote-vue",
     tags: ['HTML', 'CSS', 'Responsive', 'VUE'],
