@@ -1,177 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d448299394.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./public/css/main.css">
-</head>
+    <script
+      src="https://kit.fontawesome.com/13aa8cdc08.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
 
-<body>
-    <main class="container">
-        <header class="personal-info">
-            <section class="image-container">
-                <img src="./public/images/profile.png" alt="emmanuel" class="shadow">
-            </section>
-            <section class="info">
-                <article class="personal-name">
-                    <div>
-                        <h1>Emmanuel Lucio Urbina</h1>
-                        <p class="muted"> Web Developer </p>
-                    </div>
-                    <div>
-                        <ul class="contact-info">
-                            <li class="item">
-                                <i class="fas fa-paper-plane"></i> emmanuelluur@outlook.com
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="personal-goal">
-                    <p>
-                        Hola! me dedico al desarrollo web, empece usando PHP aunque allá por el 2013 muchos decían que era inútil usarlo, ahora uso mas Python me encanta su simplesa a la hora de programar para la web uso sus dos frameworks, Flask y DJANGO... vivo para aprender,
-                        para luego hacer cosas interesantes.
-                        <i class="fas fa-heart heart"></i>
-                    </p>
-                </article>
-            </section>
-        </header>
-        <div class="content">
-            <aside class="info_">
-                <section class="socaial_media">
-                    <div class="social">
-                        <a href="https://github.com/emmanuelurbina"><i class="fab fa-github-alt"></i></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://twitter.com/emmanuelluur"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.facebook.com/eluciourbina/"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </section>
-                <section class="skills">
+  <body>
+    <nav class="navigation">
+      <section class="navigation__logo">
+        <h3>Emmanuel</h3>
+      </section>
+      <section class="navigation__menu">
+        <ul>
+          <li><a href="#">Hi</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#">Get in touch</a></li>
+        </ul>
+      </section>
+      <section class="navigation_cv">
+        <button class="button secondary">Download resume</button>
+      </section>
+    </nav>
 
-                    <article class="detail-md">
-                        <div class="skill">
-                            <div class="text-skill">
-                                JavaScript
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-60">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="text-skill">
-                                CSS
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-60">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="text-skill">
-                                Html
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-70">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="container">
+      <section class="profile">
+        <article class="profile__message">
+          <h2>Hi!</h2>
+          <h2>I'm Emmanuel</h2>
+          <p class="p_message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            incidunt iure! Nesciunt officia optio consequatur corporis illum
+            veniam culpa omnis, distinctio, voluptatem vero quasi sed ipsa,
+            maxime quas est iure!
+          </p>
+        
+          <ul class="social">
+            <li> <a href="https://twitter.com/emmanuelluur" class="social__link"><i class="fab fa-twitter"></i></a> </li>
+            <li> <a href="https://www.facebook.com/eluciourbina/" class="social__link"><i class="fab fa-facebook"></i></a>  </li>
+            <li> <a href="https://github.com/emmanuelurbina" class="social__link"><i class="fab fa-github"></i></a>  </li>
+          </ul>
+        </article>
+        <article class="profile__image">
+          <img
+            src="./public/images/profile.png"
+            class="profile_image"
+            alt="emmanuel"
+          />
+        </article>
+      </section>
 
-                    </article>
-                    <article class="detail-md">
-                        <div class="skill">
-                            <div class="text-skill">
-                                Python
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-70">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="text-skill">
-                                PHP
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-80">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="text-skill">
-                                GIT
-                            </div>
-                            <div class="barra">
-                                <div class="bar">
-                                    <div class="load w-70">&nbsp;</div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+      <section class="portfolio" id="portfolio">
+        <h2 class="title__project">Portfolio</h2>
+        <div class="card__project">
+          <div class="card__project__image">
+            <img
+              src="./public/images/emmanuelurbina.github.io_personal_.png"
+              class="card__image"
+              alt=""
+            />
+          </div>
 
-                </section>
-                <section class="hobbies">
-                    <div>
-                        <h1>Hobbies</h1>
-                        <br><br>
-                    </div>
-                    <section class="container-hb">
-                        <article class="hobbie shadow">
-                            <div class="hobbie-image">
-                                <img src="./public/images/game.jpg" alt="">
-                            </div>
-                            <div class="details-hobbie">
-                                <h1>Videojuegos</h1>
-                                <br>
-                                <p>
-                                    Jugar videojuegos es relajante a la vez desafiante.
-                                </p>
-                            </div>
-                        </article>
-                        <article class="hobbie shadow">
-                            <div class="hobbie-image">
-                                <img src="./public/images/music.jpg" alt="">
-                            </div>
-                            <div class="details-hobbie">
-                                <h1>Escuchar Música</h1>
-                                <br>
-                                <p>
-                                    Escuchar música es estimulante para poder realizar mis <br> actividades, ya se mientras trabajo o estudio.
-                                </p>
-                            </div>
-                        </article>
-                    </section>
-                </section>
-            </aside>
-            <section class="projects">
-                <article class="projects-filter">
-                    <h1>Portafolio <span class="total-p" id="total-projects">0</span></h1>
-                </article>
-                <section class="projects-list" id="app">
+          <div class="card__container">
+            <div class="card__project__title">
+              <span class="title__project"><strong>Emmanuelurbina.github.io</strong></span>
+            </div>
+            <div class="card__project__body">
+              <p>
+                This is my personal web page where I put my projects.
+                <br>
+                This web is responsive and was made with pure css.
+              </p>
 
-                </section>
-            </section>
+              <div class="buttons__group">
+                <a href="https://github.com/emmanuelurbina/emmanuelurbina.github.io" target="_blank" class="button primary"><i class="fab fa-github card__i"></i>   See Code</a>
+
+                <a href="#" class="button secondary"><i class="fas fa-globe card__i"></i>   See Project</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </main>
-    <footer class="footer">
-        <section class="info">
-            Emmanuel Lucio Urbina <a href="https://devchallenges.io">@devchallenges.io</a>
-        </section>
-    </footer>
-    <script src="./public/js/data.js" type="module"></script>
-    <script src="./public/js/main.js" type="module"></script>
-</body>
-
+      </section>
+    </div>
+  </body>
 </html>
