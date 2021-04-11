@@ -1,494 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+
+/* General */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu Mono', monospace;
-    /*font wieght 400 & 700*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+a {
+  color: black;
 }
 
-.container {
-    margin: 2em 8em;
+a:hover {
+  text-decoration: underline;
 }
 
-
-/* personal info */
-
-.personal-info {
-    display: grid;
-    grid-template-columns: 30% 60%;
-    justify-content: center;
-    gap: 1em;
+body {
+  font-family: "Oxygen", sans-serif;
+  padding-bottom: .5em;
 }
 
-.info {
-    font-size: 22px;
+/* navigation */
+.navigation {
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 1em 3em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid #bababa;
 }
 
-.personal-name {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
-    margin-bottom: 2em;
-    gap: 1em;
+.navigation__logo {
+  text-align: left;
+  font-size: 24px;
 }
 
-.personal-name div h1 {
-    font-size: 32px;
-    font-weight: 700;
+.navigation_cv {
+  text-align: right;
 }
 
-.contact-info {
-    list-style: none;
+/*menu nav*/
+.navigation > .navigation__menu > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 18px;
 }
 
-.muted,
-i {
-    color: gray;
+/* buttons */
+a.button{
+  appearance: button;
+  text-align: center;
+}
+button, a.button {
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.heart {
-    color: red;
+button:active  {
+  text-decoration: underline;
 }
 
-.personal-goal {
-    text-align: justify;
-}
-
-.image-container {
-    width: 100%;
-    padding-right: 3em;
-}
-
-.shadow {
-    box-shadow: 8px 8px 19px -1px rgba(0, 0, 0, 0.66);
-}
-
-
-/*End Personal Info*/
-
-.socaial_media {
-    margin: 3em;
-}
-
-.socaial_media i {
-    font-size: 42px;
-}
-
-.socaial_media div {
-    display: inline;
-}
-
-
-/*skills*/
-
-.skills {
-    margin: 3em;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: unset;
-    gap: .5em;
-}
-
-.detail-md {
-    width: 100%;
-}
-
-.skill {
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-
-.barra,
-.text-skill {
-    padding: 5px 0;
-    width: 100%;
-}
-
-
-/*hobbies*/
-
-.hobbies {
-    margin: 3em;
-}
-
-.container-hb {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    gap: 1em;
-}
-
-.hobbie {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1em;
-    padding: 1em;
-    border-radius: 15px;
-}
-
-
-/*projects*/
-
-.projects {
-    margin: 3em 0;
-}
-
-.projects-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-}
-
-.project {
-    padding: 1em;
-    border-radius: 15px;
-    position: relative;
-    transform: rotate(-2deg)
-}
-
-.description-project h3 {
-    margin-top: 1em;
-}
-
-.description-project .desc {
-    margin: 2em 0;
-}
-
-.tags_project {
-    color: gray;
-}
-
-.total-p {
-    padding: 5px 1em;
-    background-color: tomato;
-    color: white;
-    font-weight: 700;
-    border-radius: 25px;
-    border: none;
-    font-size: 22px;
-}
-
-.projects-filter {
-    margin-bottom: 1em;
-}
-
-.projects-filter h1 {
-    font-size: 32px;
-}
-
-@media screen and (max-width: 1300px) {
-    .personal-name div h1 {
-        font-size: 26px;
-        font-weight: 700;
-    }
-    .info {
-        font-size: 18px;
-    }
-    .image-container {
-        padding: 0
-    }
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 35% 65%;
-}
-
-@media screen and (max-width: 1062px) {
-    .personal-info {
-        grid-template-columns: auto 60%;
-    }
-    .barra {
-        padding-left: 30px;
-    }
-    .projects-list {
-        grid-template-columns: auto;
-    }
-    .skills,
-    .hobbies {
-        margin: 1em;
-    }
-}
-
-@media screen and (max-width: 905px) {
-    .container {
-        margin: 2em;
-    }
-    .personal-info {
-        grid-template-columns: auto;
-    }
-    .personal-name {
-        text-align: center;
-        grid-template-columns: auto;
-    }
-    .info {
-        font-size: 18px;
-    }
-    .skills {
-        margin: 3em 0;
-        justify-content: unset;
-    }
-    .hobbies {
-        margin: 0;
-    }
-    .container-hb {
-        gap: 2em;
-    }
-    .projects {
-        margin: 3em 0;
-    }
-    .projects-list {
-        grid-template-columns: auto;
-    }
-    .project {
-        margin: 0;
-    }
-    .content {
-        grid-template-columns: auto;
-    }
-    .socaial_media {
-        margin: 1em 0;
-        text-align: center;
-    }
-}
-
-
-/*progress bar*/
-
-.bar {
-    width: 100%;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 15px;
-}
-
-.load {
-    background-color: purple;
-    width: 100%;
-    padding: 1px;
-    border: none;
-    border-radius: 15px;
-}
-
-.w-10 {
-    width: 10%;
-    animation: w-10-an 2s;
-}
-
-.w-20 {
-    width: 20%;
-    animation: w-20-an 2s;
-}
-
-.w-30 {
-    width: 30%;
-    animation: w-30-an 2s;
-}
-
-.w-40 {
-    width: 40%;
-    animation: w-40-an 2s;
-}
-
-.w-50 {
-    width: 50%;
-    animation: w-50-an 2s;
-}
-
-.w-60 {
-    width: 60%;
-    animation: w-60-an 2s;
-}
-
-.w-70 {
-    width: 70%;
-    animation: w-70-an 2s;
-}
-
-.w-80 {
-    width: 80%;
-    animation: w-80-an 2s;
-}
-
-.w-90 {
-    width: 90%;
-    animation: w-90-an 2s;
-}
-
-.w-100,
-.auto {
-    width: 100%;
-    animation: w-100-an 2s;
-}
-
-.footer {
-    margin: 2em 3em;
-    text-align: center;
-    color: gray;
-}
-
-.footer a {
-    text-decoration: none;
-    color: gray;
-}
-
-.list-buttons {
-    list-style: none;
-    margin: 2em;
-}
-
-.button-item {
-    display: inline;
-}
-
-.btn {
-    padding: 1em;
-    background-color: #f2f2f2;
-    font-weight: 700;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
-.btn:hover {
-    background-color: #f4f4f4;
+.button, a.button {
+  padding: 1em;
+  border-radius: 90px;
+  width: 180px;
+  box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .primary {
-    color: white;
-    background-color: tomato;
-}
-
-.primary:hover {
-    background-color: lightcoral;
+  color: #f2f2f2;
+  background-color: #9b28ed;
+  border: 2px solid #0f0a0a;
 }
 
 .secondary {
-    border: 1px solid #1e85fa;
-    background-color: white;
-    color: #1e85fa;
+  color: #000;
+  background-color: #42e2b8;
+  border: 2px solid #0f0a0a;
 }
 
-.secondary:active {
-    background-color: #1e85fa;
-    color: #fff;
+/* container */
+.container {
+  padding: 0 3em;
 }
 
-.pin {
-    width: 60px;
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.profile__message {
+  width: 50%;
+  line-height: 2;
+}
+
+.profile__message > h2 {
+  font-size: 59px;
+  font-weight: 700;
+}
+
+.profile__message > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.profile__image {
+  text-align: center;
+  width: 50%;
+}
+
+.profile_image {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.p_message {
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+/*card for my projects*/
+
+.card__project {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  height: 450px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.card__project__body,
+.card__project__title {
+  margin: 0 1em;
+}
+.card__project__title {
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+}
+.card__project__body {
+  line-height: 1.4;
+}
+
+.card__container{
+  margin-bottom: 1em;
+}
+.card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.title__project {
+  padding: 1em 1.3em;
+  color: #fff;
+  background-color: #000;
+  box-shadow: -6px 6px #42e2b8;
+}
+
+.buttons__group {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__i{
+  font-size: 22px;
+}
+
+
+.social{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.social__link{
+  background-color: #42e2b8;
+  color: #000;
+  padding: 10px 15px;
+  font-size: 24px;
+  border-radius: 15px;
+  border: 3px solid #000;
+}
+@media (max-width: 740px) {
+  .navigation {
+    display: flex;
+
+    flex-direction: column;
+    gap: 5px;
+    margin: 1em;
+  }
+
+  .navigation__menu {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1em;
+  }
+
+  .profile {
+    flex-direction: column-reverse;
     height: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
+  }
 
-.project {
-    animation: mymove 1s;
-}
+  .profile__message {
+    width: 100%;
+  }
 
-@keyframes w-10-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 10%;
-    }
-}
+  .profile__image {
+    width: 100%;
+  }
 
-@keyframes w-20-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 20%;
-    }
-}
+  .profile__message > h2 {
+    font-size: 29px;
+    font-weight: 700;
+  }
 
-@keyframes w-30-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 30%;
-    }
-}
+  .profile__message > p {
+    font-size: 20px;
+    font-weight: 400;
+  }
 
-@keyframes w-40-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 40%;
-    }
-}
-
-@keyframes w-50-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 50%;
-    }
-}
-
-@keyframes w-60-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 60%;
-    }
-}
-
-@keyframes w-70-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes w-80-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes w-90-an {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-@keyframes w-100-an {
-    from {
-        width: 10%;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes mymove {
-    from {
-        transform: rotate(1deg)
-    }
-    to {
-        transform: rotate(-2deg)
-    }
+  .profile_image {
+    width: 70%;
+  }
+  .card__project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .card__image{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1em;
+  }
+  .buttons__group{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+  }
 }
