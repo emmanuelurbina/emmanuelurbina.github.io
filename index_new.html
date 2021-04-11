@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+        /* General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: 'Oxygen', sans-serif;
+        }
+
+        /* navigation */
+        .navigation {
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-content: center;
+            margin: 1em 3em;
+            padding-bottom: 1em;
+            border-bottom: 3px solid #bababa;
+        }
+        .navigation__logo {
+            text-align: left;
+            font-size: 24px;
+        }
+        .navigation_cv{
+            text-align: right;
+        }
+        /*menu nav*/
+        .navigation>.navigation__menu>ul {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            font-size: 18px;
+        }
+
+        /* buttons */
+        button {
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+            font-size: 14px;
+            
+        }
+        button:active{
+            text-decoration:underline;
+        }
+        .button {
+            padding: 1em;
+            border-radius: 90px;
+            width: 200px;
+            box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .primary {
+            color: #f2f2f2;
+            background-color: #9b28ed;
+            border: 2px solid #0F0A0A;
+        }
+
+        .secondary {
+            color: #000;
+            background-color: #42E2B8;
+            border: 2px solid #0F0A0A;
+        }
+        /* container */
+        .container {
+            padding: 0 3em;
+        }
+        .profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80vh;
+        }
+        .profile__message {
+            width: 50%;
+            line-height: 2;
+        }
+        .profile__message>h2{
+            font-size: 59px;
+            font-weight: 700;
+        }
+        .profile__message>p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .profile__image{
+            text-align: center;
+            width: 50%;
+        }
+        .profile_image {
+            border-radius: 50%;
+            width: 60%;
+            height: auto;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+        }
+        .p_message {
+            line-height: 1.5;
+            word-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <section class="navigation__logo">
+            <h3>Emmanuel</h3>
+        </section>
+        <section class="navigation__menu">
+            <ul>
+                <li> <a href="#">Hi</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">Get in touch</a> </li>
+            </ul>
+        </section>
+        <section class="navigation_cv">
+            <button class="button secondary">Download resume</button>
+        </section>
+    </nav>
+
+    <div class="container">
+        <section class="profile">
+            <article class="profile__message">
+                <h2>Hi!</h2>
+                <h2>I'm Emmanuel</h2>
+                <p class="p_message">
+                    I´m a web developer with experience in python and php languagues for backend. <br>
+                    In frontend I have experience wit css and js.
+                </p>
+            </article>
+            <article class="profile__image">
+                <img src="./public/images/profile.png" class="profile_image" alt="emmanuel">
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
