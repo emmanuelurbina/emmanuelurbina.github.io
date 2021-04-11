@@ -19,10 +19,12 @@ a:hover {
 
 body {
   font-family: "Oxygen", sans-serif;
+  padding-bottom: .5em;
 }
 
 /* navigation */
 .navigation {
+  z-index: 1;
   top: 0;
   position: sticky;
   background-color: #fff;
@@ -53,21 +55,25 @@ body {
 }
 
 /* buttons */
-button {
+a.button{
+  appearance: button;
+  text-align: center;
+}
+button, a.button {
   cursor: pointer;
   outline: none;
   font-weight: bold;
   font-size: 14px;
 }
 
-button:active {
+button:active  {
   text-decoration: underline;
 }
 
-.button {
+.button, a.button {
   padding: 1em;
   border-radius: 90px;
-  width: 200px;
+  width: 180px;
   box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
@@ -129,6 +135,76 @@ button:active {
   word-spacing: 2px;
 }
 
+/*card for my projects*/
+
+.card__project {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  height: 450px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.card__project__body,
+.card__project__title {
+  margin: 0 1em;
+}
+.card__project__title {
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+}
+.card__project__body {
+  line-height: 1.4;
+}
+
+.card__container{
+  margin-bottom: 1em;
+}
+.card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.title__project {
+  padding: 1em 1.3em;
+  color: #fff;
+  background-color: #000;
+  box-shadow: -6px 6px #42e2b8;
+}
+
+.buttons__group {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__i{
+  font-size: 22px;
+}
+
+
+.social{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.social__link{
+  background-color: #42e2b8;
+  color: #000;
+  padding: 10px 15px;
+  font-size: 24px;
+  border-radius: 15px;
+  border: 3px solid #000;
+}
 @media (max-width: 740px) {
   .navigation {
     display: flex;
@@ -171,5 +247,22 @@ button:active {
 
   .profile_image {
     width: 70%;
+  }
+  .card__project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .card__image{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1em;
+  }
+  .buttons__group{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
   }
 }
