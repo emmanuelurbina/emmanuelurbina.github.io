@@ -216,6 +216,10 @@ button:active  {
   border-radius: 15px;
   border: 3px solid #000;
 }
+.social__link:hover {
+  box-shadow: 0 4px 16px rgba(66, 226, 184,1);
+  transition: all .2s linear;
+}
 @media (max-width: 740px) {
   .navigation {
     display: flex;
